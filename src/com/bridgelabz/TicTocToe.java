@@ -15,9 +15,14 @@ public class TicTocToe {
 
         public static void main(String[] args) {
             System.out.println("Welcome to Tic Toc toe Program");
-            ticTacToe();
-            createBoard();
-            userChoose();
+            int toss = (int) (Math.random() * 2) + 1;
+            System.out.println("Choose the toss \n1.Head\n2.Tail");
+            int playerChoose = scanner.nextInt();
+            if (playerChoose == toss) {
+                System.out.println("Player win the toss");
+            } else {
+                System.out.println("Computer win the toss");
+            }
         }
 
 
