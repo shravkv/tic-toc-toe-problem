@@ -9,6 +9,7 @@ public class TicTocToe {
     public static void main(String[] args) {
 
         System.out.println("Welcome to Tic Tac Toe game");
+        ticTacToe();
         createBoard();
         user();
 
@@ -21,5 +22,10 @@ public class TicTocToe {
     public static char user() {
         System.out.println("Enter your choice  X or O only");
         return scanner.next().toUpperCase().charAt(0);
+    }
+    public static void ticTacToe() {
+        for (int i = 0; i < gameBoard.length; i++) {
+            gameBoard[i] = ' ';
+        }
     }
 }
